@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="my-5 text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>AWARD WINNING</h1>
+                    <h2 class="display-4">DIGITAL MARKETING AGENCY</h2>
+                    <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante et elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+                    <button id="contactUsBtn" class="btn btn-danger">CONTACT US</button>
+                </div>
+                <div class="col-md-6">
+                    <img id="headerImage" src="images/ladki.png" class="img-fluid" alt="Header Image">
+                </div>
+            </div>
+        </header>
+
+        <!-- What We Do Section -->
+        <section class="my-5 text-center">
+            <h2>WHAT WE DO</h2>
+            <h3 class="display-5">SERVICES PROVIDE FOR YOU</h3>
+           
+            <div id="servicesCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#servicesCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/image1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/image2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-white bg-danger">
+                                    <div class="card-body">
+                                        <h5 class="card-title">WEB DEVELOPMENT</h5>
+                                        <p class="card-text">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.</p>
+                                        <button class="btn btn-light readMoreBtn">READ MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/image3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/image4.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-white bg-danger">
+                                    <div class="card-body">
+                                        <h5 class="card-title">GRAPHIC DESIGN</h5>
+                                        <p class="card-text">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.</p>
+                                        <button class="btn btn-light readMoreBtn">READ MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Meet the Team Section -->
+        <section class="my-5 text-center">
+            <h2>EXPERTS GROWTH</h2>
+            <h3 class="display-5">OUR COMPANY'S GROWTH</h3>
+            <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante et elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+        
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <img id="teamImage1" src="images/card1.png" class="img-fluid" alt="Team Image 1">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <img id="teamImage2" src="images/card2.png" class="img-fluid" alt="Team Image 2">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="team-member">
+                        <img id="teamImage3" src="images/card3.png" class="img-fluid" alt="Team Image 3">
+                    </div>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </section>
+
+        <!-- Our Project Section -->
+        <section class="my-5 text-center">
+            <h2>OUR PROJECT</h2>
+            <h3 class="display-5">WHY WE ARE BEST</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <img id="projectImage" src="images/project1.png" class="img-fluid" alt="Project Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="list-group" id="projectList">
+                        <a href="#" class="list-group-item list-group-item-action active" data-image="images/project1.png">Project 1</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-image="images/project2.png">Project 2</a>
+                        <a href="#" class="list-group-item list-group-item-action" data-image="images/project3.png">Project 3</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Modal -->
+        <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactUsModalLabel">Contact Us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm" method="POST" action="https://getform.io/f/zazkjozb">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
