@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h5 {
+    color: #343a40;
+}
+
+/* Header Section */
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    border-radius: 10px;
+}
+
+/* What We Do Section */
+#servicesCarousel .carousel-item {
+    transition: transform 0.5s ease;
+}
+
+#servicesCarousel .carousel-item .card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#servicesCarousel .carousel-item:hover .card {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.readMoreBtn {
+    margin-top: 15px;
+}
+
+/* Meet the Team Section */
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Our Project Section */
+#projectList .list-group-item {
+    cursor: pointer;
+}
+
+#projectList .list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+/* Contact Us Modal */
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-body input, .modal-body textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.modal-body button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-body button:hover {
+    background-color: #c82333;
+}
